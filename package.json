@@ -1,0 +1,11 @@
+{
+  "name": "test-pkg",
+  "version": "1.0.0",
+  "bin": "bin.js",
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.14.0"
+  }
+}
