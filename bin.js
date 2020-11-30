@@ -2,4 +2,6 @@
 
 console.log("bin.js", __dirname);
 
-console.log("eslint", require("eslint"));
+const eslint = require(require.resolve("eslint", {paths: [process.cwd(), ...require.resolve.paths("eslint")]}));
+
+console.log("eslint", eslint);
