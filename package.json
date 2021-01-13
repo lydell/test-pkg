@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "bin": "bin.js",
   "scripts": {
-    "prepare": "echo \"prepare is running!!!\" && elm-tooling install"
+    "prepare": "echo \"prepare is running!!!\" && node -e \"fs.mkdirSync('node_modules/.bin', {recursive: true})\""
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
