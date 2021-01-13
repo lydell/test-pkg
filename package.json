@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "bin": "bin.js",
   "scripts": {
-    "prepare": "echo \"prepare is running!!!\" && exit 1"
+    "prepare": "echo \"prepare is running!!!\" && elm-tooling install"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
   },
   "devDependencies": {
+    "elm-tooling": "^1.0.1",
     "eslint": "7.14.0"
   }
 }
