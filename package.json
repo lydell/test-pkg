@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "bin": "bin.js",
   "scripts": {
-    "prepare": "echo \"prepare is running!!!\" && node -p \"stats = fs.statSync('node_modules/.bin'); [stats.isFile(), stats.isDirectory()]\" && exit 3"
+    "prepare-x": "echo \"prepare is running!!!\" && node -p \"stats = fs.statSync('node_modules/.bin'); [stats.isFile(), stats.isDirectory()]\" && exit 3",
+    "prepare": "echo \"prepare is running!!!\" && node -e \"fs.mkdirSync('node_modules/.bin', {recursive: true})\""
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
