@@ -2,6 +2,9 @@
   "name": "test-pkg",
   "version": "1.0.0",
   "bin": "bin.js",
+  "scripts": {
+    "prepare": "echo \"prepare is running!!!\" && exit 1"
+  },
   "peerDependencies": {
     "eslint": ">=7.0.0"
   },
