@@ -1,17 +1,7 @@
 {
   "name": "test-pkg",
   "version": "1.0.0",
-  "bin": "bin.js",
   "scripts": {
-    "prepare-x": "echo \"prepare is running!!!\" && node -p \"stats = fs.statSync('node_modules/.bin'); [stats.isFile(), stats.isDirectory()]\" && exit 3",
-    "prepare-y": "echo \"prepare is running!!!\" && node -e \"fs.mkdirSync('node_modules/.bin', {recursive: true})\"",
-    "prepare": "echo 'running!!!' && elm-tooling install"
-  },
-  "peerDependencies": {
-    "eslint": ">=7.0.0"
-  },
-  "devDependencies": {
-    "elm-tooling": "^1.0.1",
-    "eslint": "7.14.0"
+    "install": "echo 'running!!!' && pwd && env && exit 1"
   }
 }
