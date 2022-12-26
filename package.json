@@ -1,7 +1,10 @@
 {
   "name": "test-pkg",
   "version": "1.0.0",
+  "bin": {
+    "yope": "run.js"
+  },
   "scripts": {
-    "install": "echo 'running!!!' && pwd && env && exit 1"
+    "install": "node run.js"
   }
 }
